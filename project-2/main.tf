@@ -1,4 +1,4 @@
-#provide
+#provider
 #vpc creation
 #subnet creation
   #public subnet
@@ -7,7 +7,7 @@
   #internet gateway creation
   #route table association
 
-provide "aws" {
+provider "aws" {
     region = "us-east-1"
 }
 
