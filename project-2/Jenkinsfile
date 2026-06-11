@@ -67,16 +67,16 @@ pipeline{
             }
         }
 
-        //stage('Backup-statefile'){
-            //steps{
-                //sh '''
-                //cd iac-repo/project-2
+        stage('Backup-statefile'){
+            steps{
+                sh '''
+                cd iac-repo/project-2
 
-               // aws s3 cp *.tfstate s3://itkannadigaru-terraform-zero-to-hero/VPC-project/
-             //   '''
-          //  }
+                aws s3 cp *.tfstate s3://vinodk99-bucket-for-backup/VPC-project/
+               '''
+          }
 
-        //}
+        }
 
     } 
 }
